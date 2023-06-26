@@ -1,0 +1,56 @@
+CSS
+
+key:value pairs
+
+property:value;
+--------------
+color:"blue";
+width:200px;
+
+
+Inline CSS
+-----------
+<h1 style="color:red;font-size:60px">Welcome</h1>
+
+Internal CSS
+--------------
+
+<html>
+<head>
+    <style>
+
+        h1
+        {
+            color:red;
+            font-size:60px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 >Welcome</h1>
+    <h1 >Full stack Development</h1>
+</body>
+
+</html>
+
+
+Selectors
+-----------
+Element
+class
+id
+relative
+
+
+
+
+JSON(Javascript Object Notation)
+----
+s1={
+    name:"Test";
+    gender:"male";
+    address:{street:"",city:"Hydrebad"}
+}
+
+s1.address.city

@@ -1,0 +1,7 @@
+HTML,VScode - 1
+CSS - Box model,position,flex,grid+Bootstrap - 4
+JS - DOM,Events Actions, CRUD - 4
+Server(PHP)- 3
+DB-1
+HTML+CSS+JS+PHP+DB-1
+Intern Project - 3

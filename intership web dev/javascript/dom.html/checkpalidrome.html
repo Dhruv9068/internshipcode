@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+</head>
+<style>
+.inputdiv{
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background-color: aquamarine;
+    height:400px;
+    width:500px;
+}
+.input{
+height:50px;
+width:200px;
+
+
+}
+
+</style>
+<body>
+
+    <div class="inputdiv">
+        <input class="input" type="text" id="data">
+       
+        <button class="btn" onclick="is_palindrome()">Submit</button>
+   
+        <h1 id="output">-----</h1>
+    </div>
+ 
+    <script>
+        function is_palindrome(){
+          inputElement=document.getElementById("data");
+           s=inputElement.value;
+
+          rs="";
+          for(i=s.length-1;i>=0;i--){
+            rs=rs+s[i]
+          }
+          if(s==rs){
+            
+            alert("Palindrome")
+          }
+          else{
+            alert("Not a Palindrome")
+          }
+
+          
+        }
+        
+    </script>
+</body>
+</html>

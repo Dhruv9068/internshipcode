@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <style>
+        .picker
+        {
+            width:100px;
+            height:100px;
+            
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <h1 id="title">Welcome to the World of Programming</h1>
+    <input id="colorip" class="picker" type="color" onchange="updateColor()">
+
+    <script>
+        function updateColor()
+        {
+            colorObj=document.getElementById("colorip")
+            titleObj=document.getElementById("title")
+
+            titleObj.style.color=colorObj.value;
+            titleObj.innerHTML=colorObj.value;
+        }
+    </script>
+
+</body>
+</html>

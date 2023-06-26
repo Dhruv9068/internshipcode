@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+</head>
+<body>
+  <h1>HELLO WORLD!</h1>
+  <button onclick="alert('Event Detected')" >Single click</button>
+  <button ondblclick="alert('Event Detected')" >Double click</button>
+  <button onclick="custom()" >Get Clickcounts</button>
+  <script>
+    a="Welcome";
+    alert(a);
+
+    age=prompt("enter age");
+    age>=18?alert(age+ " "+ "is Major"):alert(age +" "+ "is Minor");
+    var count=0;
+    function custom(){
+        count++;
+        alert("Count=" + " "+ count);
+        
+
+    }
+  </script>
+  <!-- this shows javascript have more priority than html script executed first -->
+
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+</head>
+<style>
+.inputdiv{
+
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background-color: aquamarine;
+    height:400px;
+    width:500px;
+}
+.input{
+height:50px;
+width:200px;
+
+
+}
+.box{
+    width:100px;
+    height:100px;
+    background-color: aqua;
+
+}
+
+</style>
+<body>
+
+    <div class="inputdiv">
+        <input class="input" type="range" min="0" max="255"  value="90" id="rdata" onpointermove="update()">
+        <input class="input" type="range" min="0" max="255" value="90" id="gdata" onpointermove="update()">
+        <input class="input" type="range" min="0" max="255" value="90" id="bdata" onpointermove="update()">
+        <div class="box" id="color_out"></div>
+
+      
+    </div>
+ 
+    <script>
+       function update(){
+        redElement=document.getElementById("rdata");
+        greenElement=document.getElementById("gdata");
+        blueElement=document.getElementById("bdata");
+        colorOutElement=document.getElementById("color_out")
+     colorOutElement.style.backgroundColor=`rgb(${redElement.value}, ${greenElement.value}, ${blueElement.value})`;
+       }
+        
+    </script>
+</body>
+</html>

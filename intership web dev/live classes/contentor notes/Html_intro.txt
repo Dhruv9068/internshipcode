@@ -1,0 +1,27 @@
+Header
+Footer
+TEXT,Paragaraphs
+	<h1,h2,h3..h6>
+	<p>
+Forms,checkbox,Input
+	input,textarea
+Dropdowns,
+	select
+List
+	ol,ul,li
+Images,Logo
+	img,svg,canvas
+Navbar,Links
+	<a> <nav>
+Buttons
+	<button>
+Tables
+	<table>
+Video
+	<video>, <audio>
+division,sections
+	<div> <section> <span>
+
+
+	
+
